@@ -25,13 +25,13 @@ class BaseModel(db.Model):
         }
 
 
-class table_3(BaseModel, db.Model):
+class table_2(BaseModel, db.Model):
     """Model for the my_points table"""
-    __tablename__ = 'table_3'
+    __tablename__ = 'table_2'
 
-    pincode= db.Column(db.Integer, primary_key = True)
-    place = db.Column(db.String)
-#    admin_name1=db.Column(db.String)
-#    latitude = db.Column(db.Float)
-#   longitude = db.Column(db.Float)
-#    accuracy=db.Column(db.Float)
+    key= db.Column(db.String, primary_key = True)
+    place_name = db.Column(db.String)
+    admin_name1=db.Column(db.String)
+    latitude = db.Column(db.Float)
+    longitude = db.Column(db.Float)
+    accuracy=db.Column(db.Float)
